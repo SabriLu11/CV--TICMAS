@@ -1,0 +1,76 @@
+body{
+    background-color: rgb(214, 212, 210);
+    
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    
+    
+}
+
+.grid-layout{
+    height: 600px;
+    display: grid;
+    grid-template-rows: 20% 35% 35% auto;
+    grid-template-columns: 5% 10% auto auto 5%;
+    background-color: rgb(252, 252, 252);
+    border: solid 1px black;
+    overflow: hidden;
+}
+
+.caja1{
+    grid-column: 2 / 4;
+    background-color: rgb(105, 105, 105);
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+
+    .imagen{
+        border-radius: 100% 100% 100% 100%;
+        border-color: black 5px;
+        width:120px;
+        height:120px;
+    }
+    .nombre{
+        text-align: center;
+        text-decoration: underline;  
+    }
+}
+
+.caja2{
+    
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    background-color: rgb(211, 210, 210);
+    display:grid;
+    grid-template-rows: auto;
+       
+}
+
+.caja3{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3 ;
+    background-color: rgb(151, 151, 151);
+    display:grid;
+    grid-template-columns: auto auto;
+    
+}
+
+.caja4{
+    grid-column:3 / 4 ;
+    grid-row: 3 / 4 ;
+    background-color: rgb(190, 190, 190);
+    display:grid;
+    grid-template-columns: auto;
+
+    .inside{
+    list-style: none;
+    }
+}
+
+.caja5{
+    grid-column: 2 / 4;
+    background-color: rgb(211, 210, 210);
+    display:grid;
+    grid-template-columns: 33% 33% 33% ;
+    align-content: space-around;
+    justify-items: center;
+}
